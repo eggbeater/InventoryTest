@@ -41,7 +41,7 @@ namespace InventoryTest
       
 
         private void addButton_Click(object sender, EventArgs e)
-        {;
+        {
             var test = InventoryData.items[allItemsBox.SelectedIndex];
             Inventory.AddItem(test);
             
@@ -60,6 +60,25 @@ namespace InventoryTest
         private void testButton_Click(object sender, EventArgs e)
         {
             Inventory.MoveItems(0, 1);
+        }
+
+        private void testButton2_Click(object sender, EventArgs e)
+        {
+            Inventory.Sort();
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            Inventory.RemoveItem(0);
+        }
+
+        private void add256Button_Click(object sender, EventArgs e)
+        {
+            var test = InventoryData.items[allItemsBox.SelectedIndex];
+            for (int i = 0; i < 256; i++)
+            {
+                Inventory.AddItem(test);
+            }
         }
     }
 }

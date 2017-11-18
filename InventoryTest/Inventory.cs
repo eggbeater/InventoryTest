@@ -18,10 +18,50 @@ namespace InventoryTest
     THOUGHTSSSSSSSSSS:
     might rewrite the dictiony to only be two ints, one for the ID one for the ammount and just use another
     data structure to hold all the items. in fact i think i should prolly do this
+
+
+
+    OH GOD WHAT NOW.  
+    So im pretty sure i have to make an 'empty item' to fill in the spots or find a new way of doing this entirely.  
     */
     static class Inventory
     {
-        static InventoryItem[] inv = new  InventoryItem[255]; //currently max inventory is 256, may switch to a list and give unlimited sapce.
+        static InventoryItem[] inv = new InventoryItem[]
+        {
+            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+             new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                      new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                             new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                      new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+                                           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1)
+        }; //currently max inventory is 256, may switch to a list and give unlimited sapce.
+  
         public static List<string> testList = new List<string>();
 
         public static void AddItem(Item item)
@@ -29,14 +69,15 @@ namespace InventoryTest
             //right now just add item to the array, do not auto sort. 
 
             //have to find the first empty slot in the array
-            for(int i = 0; i < 255; i++)
+            for(int i = 0; i < 256; i++)
             {
-                if(inv[i] == null)
+                if(inv[i].count == -1)
                 {
                     inv[i] = new InventoryItem(item, 1); // add item and break loop
                     break;
                 }
 
+                
                /* else
                 {
                     Console.WriteLine("inventory at " + i + " is full:  It has " + inv[i].item.name);
@@ -52,13 +93,18 @@ namespace InventoryTest
                 Console.WriteLine("trying to remove part of inventory that isnt there");
             }
 
+            else if(inv[index].count == -1)
+            {
+                Console.WriteLine("trying to remove an empty item");
+            }
+
             else
             {
                 inv[index].count--; //reduce by one
 
                 if(inv[index].count == 0) //check to see if we removed the last in that stack
                 {
-                    inv[index] = null;
+                    inv[index] = new InventoryItem(new Item(), -1) ;
                 }
 
             }
@@ -71,13 +117,54 @@ namespace InventoryTest
             inv[index1] = inv[index2];
             inv[index2] = temp;
         }
+
+        public static void Sort() //alright im tired an this makes no sense but here we go,  
+            //im going to set every 'empty' item with the name 'zzzzzzzzzzzzz' to be able to sort and then chnage them all
+            //back after its done sorting.  THIS MAKES SENSE
+
+        
+        {
+            for (int i = 0; i < 256; i++)
+            {
+                if(inv[i].item.name == "")
+                {
+                    inv[i].item.name = "zzzzzz";
+                }
+            }
+
+            var test = inv.OrderBy(x => x.item.name); // i use var here to use an anonymous function to sort
+            List<InventoryItem> test2 = new List<InventoryItem>(test); //howerver i had to make a hard typed list to remove the first item.
+
+            //Console.WriteLine(test2.ElementAt(0).item.name);
+            //Console.WriteLine(test2.ElementAt(1).item.name);
+            
+            inv = test2.ToArray();
+
+            for (int i = 0; i < 256; i++)
+            {
+                if (inv[i].item.name == "zzzzzz")
+                {
+                    inv[i].item.name = "";
+                }
+            }
+
+            
+
+            ListInv();
+        }
+
         public static void ListInv() //testing method to print out the array
         {
+            int x = 0;
             foreach(InventoryItem i in inv)
             {
-                if(i != null)
-                  Console.WriteLine(i.item.name + " " + i.item.id + " " + i.count);
+                if(i.count != -1 )
+                  Console.WriteLine(x + " " + i.item.name + " " + i.item.id + " " + i.count);
+
+                x++;
             }
+
+            Console.WriteLine(" ");
         }
 
     }

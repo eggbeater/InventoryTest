@@ -38,6 +38,8 @@
             this.outputBox = new System.Windows.Forms.RichTextBox();
             this.testButton2 = new System.Windows.Forms.Button();
             this.add256Button = new System.Windows.Forms.Button();
+            this.testEquipReturn = new System.Windows.Forms.Button();
+            this.equipFormButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // allItemsBox
@@ -134,11 +136,33 @@
             this.add256Button.UseVisualStyleBackColor = true;
             this.add256Button.Click += new System.EventHandler(this.add256Button_Click);
             // 
+            // testEquipReturn
+            // 
+            this.testEquipReturn.Location = new System.Drawing.Point(133, 245);
+            this.testEquipReturn.Name = "testEquipReturn";
+            this.testEquipReturn.Size = new System.Drawing.Size(75, 23);
+            this.testEquipReturn.TabIndex = 10;
+            this.testEquipReturn.Text = "equip return";
+            this.testEquipReturn.UseVisualStyleBackColor = true;
+            this.testEquipReturn.Click += new System.EventHandler(this.testEquipReturn_Click);
+            // 
+            // equipFormButton
+            // 
+            this.equipFormButton.Location = new System.Drawing.Point(133, 283);
+            this.equipFormButton.Name = "equipFormButton";
+            this.equipFormButton.Size = new System.Drawing.Size(75, 23);
+            this.equipFormButton.TabIndex = 11;
+            this.equipFormButton.Text = "Equip Form";
+            this.equipFormButton.UseVisualStyleBackColor = true;
+            this.equipFormButton.Click += new System.EventHandler(this.equipFormButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 553);
+            this.Controls.Add(this.equipFormButton);
+            this.Controls.Add(this.testEquipReturn);
             this.Controls.Add(this.add256Button);
             this.Controls.Add(this.testButton2);
             this.Controls.Add(this.outputBox);
@@ -169,6 +193,8 @@
         private System.Windows.Forms.RichTextBox outputBox;
         private System.Windows.Forms.Button testButton2;
         private System.Windows.Forms.Button add256Button;
+        private System.Windows.Forms.Button testEquipReturn;
+        private System.Windows.Forms.Button equipFormButton;
     }
 }
 

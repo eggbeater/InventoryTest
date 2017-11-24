@@ -13,6 +13,10 @@ namespace InventoryTest
     public partial class Form1 : Form
     {
         List<Item> allItems;
+        Character[] party = new Character[5];
+        List<object> characterList = new List<object>();
+        static Character cecilTest = new Character("Cecil", 1);
+        CharacterForm cf;
 
 
         public Form1()
@@ -28,8 +32,10 @@ namespace InventoryTest
             allItemsBox.DataSource = null;
             allItemsBox.DataSource = InventoryData.items;
             allItemsBox.DisplayMember = "name";
+           
 
             currentItemsBox.DataSource = null;
+            party[0] = cecilTest;
            // currentItemsBox.DataSource = new BindingSource(Inventory.d, null);
            // currentItemsBox.DisplayMember = "Value";
            // currentItemsBox.ValueMember = "Key";
@@ -79,6 +85,17 @@ namespace InventoryTest
             {
                 Inventory.AddItem(test);
             }
+        }
+
+        private void testEquipReturn_Click(object sender, EventArgs e)
+        {
+            Inventory.FindEquipable(1,1);
+        }
+
+        private void equipFormButton_Click(object sender, EventArgs e)
+        {
+            cf = new CharacterForm(cecilTest);
+            cf.Show();
         }
     }
 }

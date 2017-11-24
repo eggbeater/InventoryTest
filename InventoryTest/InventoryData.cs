@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace InventoryTest
 {
-     static class InventoryData
+    //class made to hold all Items available int the game
+     public static class InventoryData
     {
         public static Item[] items = new Item[]
            {
@@ -20,7 +21,10 @@ namespace InventoryTest
                 new Armor(7, "Cap", "Light head protection", 2, 1, 1),
                 new Armor(8, "Robe", "Light body protection", 2, 2, 1),
                 new Armor(9, "Gloves", "Light hand protection", 2, 3, 1),
+                new Armor(10, "Hat", "Light head protection", 2, 1, 1),
 
+
+                // Armor(int _id, string _name, string _about, int _armorValue, int _slot, int _characters)
 
            };
 

@@ -10,6 +10,8 @@ namespace InventoryTest
     {
         public int armorValue;
         public int slot;
+        int id, cost;
+        string about, name;
 
         #region slot info
         // 1 = head
@@ -30,7 +32,7 @@ namespace InventoryTest
         // 5 = edge
         #endregion
 
-        public Armor(int _id, string _name, string _about, int _armorValue, int _slot, int _characters)
+        public Armor(int _id, string _name, string _about, int _cost, int _armorValue, int _slot, int _characters)
         {
             id = _id;
             name = _name;
@@ -38,6 +40,7 @@ namespace InventoryTest
             armorValue = _armorValue;
             slot = _slot;
             characters = _characters;
+            cost = _cost;
 
         }
         public Armor() //no amror to wear with nothing on
@@ -48,9 +51,18 @@ namespace InventoryTest
             armorValue = 0;
             slot = 255; //this is the only thing that is a '5'
             characters = 0; //everyone
+            cost = 0;
 
 
         }
+
+        //property accessors
+
+        public int Id  { get => id; set => id = value; } 
+        public string Name   {   get => name; set => name = value; }
+        public int Type { get ; set; }
+        public string About { get => about; set => about = value; }// text that gives a quick desc of the item.
+        public int Cost { get => cost; set => cost = value; }
 
     }
 }

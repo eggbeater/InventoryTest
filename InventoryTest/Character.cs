@@ -30,6 +30,9 @@ namespace InventoryTest
         int maxHp;
         int stam;
         int def;
+        int attack;
+        int str;
+
         public Armor helm;
         public Armor body;
         public Armor arms;
@@ -40,21 +43,26 @@ namespace InventoryTest
         {
             name = _name;
             charSlot = _charSlot;
-            int currentHp = 100;
-            int maxHp = 100;
-            int stam = 10;
-            int def = 10;
+            currentHp = 100;
+            maxHp = 100;
+            stam = 10;
+            def = 10;
+            attack = 1;
+            str = 10;
             helm = new Armor();
             body = new Armor();
             ring = new Armor();
             arms = new Armor();
         }
 
+      
+
+
         public void RemoveArmor(int slot) //just remove armor and put in Inventory
         {
             if (slot == 1) //remove head
             {
-                if (helm.id == 255) // checks to see if already empty and do nothing
+                if (helm.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -68,7 +76,7 @@ namespace InventoryTest
 
             else if (slot == 2) //remove body
             {
-                if (body.id == 255) // checks to see if already empty and do nothing
+                if (body.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -82,7 +90,7 @@ namespace InventoryTest
 
             else if (slot == 3) //remove arms
             {
-                if (arms.id == 255) // checks to see if already empty and do nothing
+                if (arms.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -96,7 +104,7 @@ namespace InventoryTest
 
             else if (slot == 4) //remove ring
             {
-                if (ring.id == 255) // checks to see if already empty and do nothing
+                if (ring.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -139,6 +147,13 @@ namespace InventoryTest
 
             CorrectTheValues();
 
+        }
+
+        public void printEqupied()
+        {
+            Console.WriteLine(helm.Name);
+            Console.WriteLine(body.Name);
+            Console.WriteLine(arms.Name);
         }
 
     }

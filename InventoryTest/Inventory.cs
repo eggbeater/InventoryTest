@@ -26,50 +26,88 @@ namespace InventoryTest
     */
     static class Inventory
     {
-        static InventoryItem[] inv = new InventoryItem[]
+        public static InventoryItem[] inv = new InventoryItem[]
         {
-            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                      new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                             new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                      new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
-                                           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1)
-        }; //currently max inventory is 256, may switch to a list and give unlimited sapce.
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+                        new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+                        new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
+            new InventoryItem(new Potion(), -1), new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),new InventoryItem(new Potion(), -1),
 
-        public static List<string> testList = new List<string>();
+        };
 
+
+
+       //public static InventoryItem[] inv = new InventoryItem[]
+       // {
+       //     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //             new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                     new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                      new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                       new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                        new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                         new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                          new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                           new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                            new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                             new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                              new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                               new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                                new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                                 new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                                  new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                                   new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),
+       //                                    new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1),new InventoryItem(new Item(), -1)
+       // }; //currently max inventory is 256, may switch to a list and give unlimited sapce.
+
+        public static int gil = 1000;
         public static void AddItem(Item item)
         {
             //have to find the first empty slot in the array
             for (int i = 0; i < 256; i++)
             {
-                if (inv[i].item.id == item.id) //check to see if we have that item in the inventory
+                if (inv[i].item.Id == item.Id) //check to see if we have that item in the inventory
                 {
                     if (inv[i].count < 99) // if we do and its less than 99 add 1 to count
                     {
@@ -115,7 +153,7 @@ namespace InventoryTest
 
                 if (inv[index].count == 0) //check to see if we removed the last in that stack
                 {
-                    inv[index] = new InventoryItem(new Item(), -1); //if it is add an empty item there
+                    inv[index] = new InventoryItem(new Potion(), -1); //if it is add an empty item there
                 }
 
             }
@@ -137,13 +175,13 @@ namespace InventoryTest
         {
             for (int i = 0; i < 256; i++)
             {
-                if (inv[i].item.name == "")
+                if (inv[i].item.Name == "")
                 {
-                    inv[i].item.name = "zzzzzz";
+                    inv[i].item.Name = "zzzzzz";
                 }
             }
 
-            var test = inv.OrderBy(x => x.item.name); // i use var here to use an anonymous function to sort
+            var test = inv.OrderBy(x => x.item.Name); // i use var here to use an anonymous function to sort
             List<InventoryItem> test2 = new List<InventoryItem>(test); //howerver i had to make a hard typed list to remove the first item.
 
             //Console.WriteLine(test2.ElementAt(0).item.name);
@@ -153,9 +191,9 @@ namespace InventoryTest
 
             for (int i = 0; i < 256; i++)
             {
-                if (inv[i].item.name == "zzzzzz")
+                if (inv[i].item.Name == "zzzzzz")
                 {
-                    inv[i].item.name = "";
+                    inv[i].item.Name = "";
                 }
             }
 
@@ -194,10 +232,10 @@ namespace InventoryTest
 
         public static int FindIndex(Item item)
         {
-            int id = item.id;
+            int id = item.Id;
             for(int i = 0; i < 256; i++ )
             {
-                if (inv[i].item.id == id)
+                if (inv[i].item.Id == id)
                     return i;
             }
 
@@ -210,12 +248,23 @@ namespace InventoryTest
             foreach (InventoryItem i in inv)
             {
                 if (i.count != -1)
-                    Console.WriteLine(x + " " + i.item.name + " " + i.item.id + " " + i.count);
+                    Console.WriteLine(x + " " + i.item.Name + " " + i.item.Id + " " + i.count);
 
                 x++;
             }
 
             Console.WriteLine(" ");
+        }
+
+        public static List<Item> getItemList()
+        {
+            List<Item> returnList = new List<Item>();
+
+            foreach(InventoryItem i in inv)
+            {
+                returnList.Add(i.item);
+            }
+            return returnList;
         }
 
     

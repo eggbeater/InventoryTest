@@ -39,7 +39,7 @@ namespace InventoryTest
         {
             if (slot == 1) //remove head
             {
-                if (helm.id == 255) // checks to see if already empty and do nothing
+                if (helm.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -53,7 +53,7 @@ namespace InventoryTest
 
             else if (slot == 2) //remove body
             {
-                if (body.id == 255) // checks to see if already empty and do nothing
+                if (body.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -67,7 +67,7 @@ namespace InventoryTest
 
             else if (slot == 3) //remove arms
             {
-                if (arms.id == 255) // checks to see if already empty and do nothing
+                if (arms.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else
@@ -81,7 +81,7 @@ namespace InventoryTest
 
             else if (slot == 4) //remove ring
             {
-                if (ring.id == 255) // checks to see if already empty and do nothing
+                if (ring.Id == 255) // checks to see if already empty and do nothing
                     return; //this probably doesnt have to be here
 
                 else

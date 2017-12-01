@@ -13,9 +13,7 @@ namespace InventoryTest
     public partial class CharacterForm : Form
     {
         Character c;
-        public delegate void ReturnUpdatedCharacter(object source, Character c);
-
-       // public event ReturnUpdatedCharacter 
+     
         public CharacterForm(Character _c)
         {
             c = _c;
@@ -25,9 +23,9 @@ namespace InventoryTest
         private void CharacterForm_Load(object sender, EventArgs e)
         {
             nameLabel.Text = c.name;
-            bodyLabel.Text = c.body.name;
-            armsLabel.Text = c.arms.name;
-            helmLabel.Text = c.helm.name;
+            bodyLabel.Text = c.body.Name;
+            armsLabel.Text = c.arms.Name;
+            helmLabel.Text = c.helm.Name;
         }
 
         private void findHelmButton_Click(object sender, EventArgs e)
@@ -51,9 +49,9 @@ namespace InventoryTest
             c.EquipArmor(temp);
             Inventory.RemoveItem(Inventory.FindIndex(temp));
 
-            bodyLabel.Text = c.body.name;
-            armsLabel.Text = c.arms.name;
-            helmLabel.Text = c.helm.name;
+            bodyLabel.Text = c.body.Name;
+            armsLabel.Text = c.arms.Name;
+            helmLabel.Text = c.helm.Name;
 
         }
 
@@ -83,6 +81,13 @@ namespace InventoryTest
             armorBox.DataSource = null;
             armorBox.DataSource = armorList;
             armorBox.DisplayMember = "name";
+        }
+
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
         }
     }
 }

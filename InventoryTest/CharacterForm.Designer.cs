@@ -194,6 +194,7 @@
             this.saveButton.TabIndex = 15;
             this.saveButton.Text = "Save Changes";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // CharacterForm
             // 

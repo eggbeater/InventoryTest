@@ -16,13 +16,18 @@ namespace InventoryTest
         Character[] party = new Character[5];
         List<object> characterList = new List<object>();
         static Character cecilTest = new Character("Cecil", 1);
+        static Character rosaTest = new Character("Rosa", 2);
         CharacterForm cf;
+        ShopForm sf;
+
+       
 
 
         public Form1()
         {
             InitializeComponent();
             
+
            
 
         }
@@ -94,8 +99,22 @@ namespace InventoryTest
 
         private void equipFormButton_Click(object sender, EventArgs e)
         {
-            cf = new CharacterForm(cecilTest);
+            cf = new CharacterForm(rosaTest);
             cf.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cecilTest.printEqupied();
+            rosaTest.printEqupied();
+        }
+
+        private void shopButton_Click(object sender, EventArgs e)
+        {
+            Shop s = new Shop();
+            sf = new ShopForm(s);
+            sf.Show();
+
         }
     }
 }
